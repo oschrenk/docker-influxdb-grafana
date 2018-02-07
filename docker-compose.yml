@@ -1,6 +1,8 @@
 influxdb:
   image: influxdb:latest
   container_name: influxdb
+  volumes:
+    - /Users/oliver/Data/influxdb:/var/lib/influxdb
   ports:
     - "8083:8083"
     - "8086:8086"
@@ -9,6 +11,8 @@ influxdb:
 grafana:
   image: grafana/grafana:latest
   container_name: grafana
+  volumes:
+    - /Users/oliver/Data/grafana:/var/lib/grafana
   ports:
     - "3000:3000"
   links:

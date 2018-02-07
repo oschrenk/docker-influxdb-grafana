@@ -6,10 +6,30 @@ cd docker-influxdb-grafana
 ./run.sh
 ```
 
-## TODO
+To install Influx CLI
 
-- define persistent dashboard
-- define persistent storage
+```
+brew install influxdb
+```
+
+
+## Configuration
+
+```
+influx -precision rfc3339
+```
+
+```
+# Create a database
+influx -precision rfc3339
+Connected to http://localhost:8086 version 1.4.3
+InfluxDB shell version: v1.4.3
+> CREATE DATABASE example
+```
+
+## Usage
+
+Open browser to `localhost:3000`
 
 ## Resources
 

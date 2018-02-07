@@ -1,7 +1,7 @@
 # README
 
 ```
-git clone https://github.com/docker-influxdb-grafana
+git clone https://github.com/oschrenk/docker-influxdb-grafana
 cd docker-influxdb-grafana
 ./run.sh
 ```
@@ -9,7 +9,7 @@ cd docker-influxdb-grafana
 ## TODO
 
 - define persistent dashboard
-- define persistens storage
+- define persistent storage
 
 ## Resources
 
